@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.name-section p {
+  background: #000;
+  padding: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.details-section {
+  flex: 1;
+}
+
+.name-section p:active {
+  transform: scale(0.98);
+}

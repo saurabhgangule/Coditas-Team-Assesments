@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Window</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./scripts/references.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/event-listener.js" defer></script>
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="you-section chat-section">
+        <h2 class="user-name">You</h2>
+        <div id="you-text-section"></div>
+        <div class="send-section">
+          <textarea id="you-textarea"></textarea>
+          <button class="btn" id="you-send-btn">Send</button>
+        </div>
+      </section>
+      <section class="user-section chat-section">
+        <h2 class="user-name">Other</h2>
+        <div id="user-text-section"></div>
+        <div class="send-section">
+          <textarea id="user-textarea"></textarea>
+          <button class="btn" id="user-send-btn">Send</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

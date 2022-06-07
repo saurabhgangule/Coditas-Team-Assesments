@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background-color: rgb(201, 215, 252);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.create-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(131, 164, 253);
+  align-items: center;
+}
+
+​ .input-section {
+  flex: 1;
+}
+
+.input-question {
+  width: -webkit-fill-available;
+  padding: 1rem 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.option-list {
+  margin-bottom: 0.5rem;
+}
+
+.option-list input {
+  padding: 0.5rem 0.2rem;
+  margin-right: 0.2rem;
+}
+
+.question-type {
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem;
+}
+
+.btn,
+.question > label,
+.act-btn,
+.radio-select {
+  cursor: pointer;
+}
+
+.que-with-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: thin solid rgb(131, 164, 253);
+}
+
+.que-with-options span {
+  display: block;
+}
+
+.action-btns {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.ver-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

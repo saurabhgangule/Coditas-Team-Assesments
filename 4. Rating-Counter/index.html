@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Rating Counter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/reference.js" defer></script>
+    <script src="./scripts/eventListener.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <form
+        method="post"
+        action="#"
+        class="name-section"
+        id="name-section-form"
+      >
+        <select name="ambience" id="ambience">
+          <option value="">Ambience</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <select name="cleanliness" id="cleanliness">
+          <option value="">Cleanliness</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <select name="service" id="service">
+          <option value="">Service</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <select name="food" id="food">
+          <option value="">Food</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button type="submit" class="type-submit">Submit</button>
+      </form>
+      <section class="details-section">
+        <div class="data-table">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Ambience</th>
+                <th>Cleanliness</th>
+                <th>Service</th>
+                <th>Food</th>
+                <th>Average</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+        <div class="all-avg-section">
+          <div class="mega-avg">
+            <h1 id="mega-avg">0</h1>
+          </div>
+          <div class="type-avg">
+            <div class="mini-container">
+              <label for="amb-avg">Ambience Avg:</label>
+              <progress id="amb-avg" value="" max="5"></progress>
+            </div>
+
+            <div class="mini-container">
+              <label for="cl-avg">Cleanliness Avg:</label>
+              <progress id="cl-avg" value="" max="5"></progress>
+            </div>
+
+            <div class="mini-container">
+              <label for="ser-avg">Service Avg:</label>
+              <progress id="ser-avg" value="" max="5"></progress>
+            </div>
+
+            <div class="mini-container">
+              <label for="food-avg">Food Avg:</label>
+              <progress id="food-avg" value="" max="5"></progress>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.chat-section {
+  padding: 0.5rem;
+  background-color: #eee;
+}
+
+.send-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.user-name {
+  text-align: center;
+}
+
+.chat-text {
+  display: block;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: #000;
+  color: #fff;
+}
+
+.btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#you-text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#you-text-section .right {
+  align-self: flex-end;
+}
+
+#user-text-section {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-text-section .right {
+  align-self: flex-end;
+}
+
+.send-section textarea {
+  resize: unset;
+  white-space: unset;
+}

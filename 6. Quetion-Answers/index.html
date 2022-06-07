@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/references.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/event-listner.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <section class="create-question container-item">
+        <form
+          action="#"
+          method="GET"
+          class="input-section"
+          id="form-submit"
+          enctype="multipart/form-data"
+          style="flex: 1"
+        >
+          <input
+            class="input-question"
+            type="text"
+            id="question"
+            name="question"
+            placeholder="enter question"
+          />
+          <div class="option-list" id="option-list"></div>
+          <div class="question-operation" id="operations">
+            <button type="submit" class="btn submit">Submit</button>
+            <button type="button" class="btn add" id="add-btn">
+              Add Option +
+            </button>
+          </div>
+        </form>
+        <div class="question question-type">
+          <!-- <div class="btn-list" > -->
+          <input
+            type="radio"
+            class="radio-select dropdown"
+            name="que-type"
+            id="dropdown"
+            checked
+          />
+          <label for="dropdown">Dropdown</label>
+          <input
+            type="radio"
+            class="radio-select checkbox"
+            name="que-type"
+            id="checkbox"
+          />
+          <label for="checkbox">Checkbox</label>
+          <input
+            type="radio"
+            class="radio-select numeric"
+            name="que-type"
+            id="numeric"
+          />
+          <label for="numeric">Numeric</label>
+          <input
+            type="radio"
+            class="radio-select text"
+            name="que-type"
+            id="text"
+          />
+          <label for="text">Text</label>
+          <!-- </div> -->
+        </div>
+      </section>
+      <section
+        class="display-question conatiner-item"
+        id="display-all-questions"
+      >
+        <div class="que-with-options" style="display: none">
+          <p>This is sample question <span>This, is, options</span></p>
+          <div class="action-btns">
+            <div class="ver-btns">
+              <button class="act-btn" type="button">T</button>
+              <button class="act-btn" type="button">B</button>
+            </div>
+            <button class="act-btn del-btn" type="button">X</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
