@@ -1,0 +1,15 @@
+<div class="container">
+  <div *ngIf="hero" class="hero-details display-flex">
+    <h2 class="heading-2">{{ hero.name }} Details</h2>
+    <div>ID: {{ hero.id }}</div>
+    <div>
+      <label for="hero-name">Hero Name: </label>
+      <input
+        class="form-control"
+        id="hero-name"
+        [(ngModel)]="hero.name"
+        placeholder="name"
+      />
+    </div>
+  </div>
+</div>

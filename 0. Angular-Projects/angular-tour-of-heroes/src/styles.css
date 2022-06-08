@@ -1,0 +1,125 @@
+/* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 2em;
+}
+body,
+.form-control,
+.button {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
+.heading-1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.heading-2,
+.heading-3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+}
+.button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: 1em;
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  box-shadow: 2px 2px 6px 2px #ccc;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+}
+.button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+.display-flex,
+.top-heroes-container {
+  display: flex;
+}
+
+nav.display-flex {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroes-list .button {
+  margin: 1rem 0;
+  padding: 0;
+}
+
+.badge {
+  padding: 1rem;
+  background: black;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.name {
+  flex: 1;
+  width: 200px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.heroes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.form-control {
+  padding: 0.5rem 0.5rem;
+}
+
+.hero-details {
+  border: thin solid #ccc;
+  padding: 0 0 1rem 1rem;
+  border-radius: 4px;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 2px 2px 6px 2px #ccc;
+}
+
+.top-heroes {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+  box-shadow: 2px 2px 6px 2px #ccc;
+}
+
+.top-heroes:hover {
+  color: #000;
+  background-color: #aaa;
+}
+
+.container {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.top-heroes-container,
+.h-list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
